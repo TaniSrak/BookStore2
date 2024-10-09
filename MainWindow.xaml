@@ -1,0 +1,30 @@
+﻿<Window x:Class="BookStore2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookStore2"
+        mc:Ignorable="d"
+        Title="Book Store" Height="450" Width="800">
+    <Grid>
+        <!-- Поле для поиска книги -->
+        <TextBox Name="txtSearch" Width="200" Height="25" Margin="310,92,290,317" Text="Поиск по названию, автору или жанру"/>
+        <Button Name="btnSearch" Content="Найти" Width="100" Height="25" Margin="550,92,150,317" Click="btnSearch_Click"/>
+
+        <!-- Список книг -->
+        <ListBox Name="lstBooks" Margin="71,92,526,99"/>
+
+        <!-- Поля для работы с книгами -->
+        <TextBox Name="txtTitle" Width="200" Height="25" Margin="310,173,290,236" Text="Название книги"/>
+        <TextBox Name="txtAuthor" Width="200" Height="25" Margin="310,198,290,211" Text="Автор"/>
+        <TextBox Name="txtGenre" Width="200" Height="25" Margin="310,223,290,186" Text="Жанр" RenderTransformOrigin="0.503,0.004"/>
+        <TextBox Name="txtYear" Width="200" Height="25" Margin="310,253,290,156" Text="Год издания"/>
+        <TextBox Name="txtPrice" Width="200" Height="25" Margin="310,278,290,131" Text="Цена"/>
+
+        <!-- Кнопки для работы с книгами -->
+        <Button Name="btnAdd" Content="Добавить книгу" Width="150" Height="30" Margin="582,171,68,233" Click="btnAdd_Click"/>
+        <Button Name="btnEdit" Content="Редактировать" Width="150" Height="30" Margin="582,206,68,198" Click="btnEdit_Click"/>
+        <Button Name="btnDelete" Content="Удалить" Width="150" Height="30" Margin="582,241,68,163" Click="btnDelete_Click" RenderTransformOrigin="0.82,-3.802"/>
+        <Button Name="btnSell" Content="Продать книгу" Width="150" Height="30" Margin="582,276,68,128" Click="btnSell_Click"/>
+    </Grid>
+</Window>
